@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SecureLine - Fique a salvo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        ::-webkit-scrollbar {
+	  width: 8px;
+	}
+	/* Track */
+	::-webkit-scrollbar-track {
+	  background: #f1f1f1; 
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: #888; 
+	}
+	
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #555; 
+	} /* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ecf0f3;
+}
+
+.wrapper {
+    max-width: 350px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+.logo {
+    width: 80px;
+    margin: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #5f5f5f,
+        0px 0px 0px 5px #ecf0f3,
+        8px 8px 15px #a7aaa7,
+        -8px -8px 15px #fff;
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    /* border: 1px solid red; */
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+.wrapper a:hover {
+    color: #039BE5;
+}
+
+@media(max-width: 380px) {
+    .wrapper {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}
+    </style>
+</head>
+
+<body classname="snippet-body">
+    <div class="wrapper">
+        <div class="logo">
+            <img src="img\logo.jpeg" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+            SecureLine <br>
+            <h6> Fique a salvo</h6>
+        </div>
+		<center>
+			<div class="btn-group role="group"">				
+				<a href="Alertas.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Alertas</a>
+				<a href="hanking.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ranking</a>				
+			</div>
+			<h4> Cadastro de Alerta</h4>
+		</center>
+        <form class="p-3 mt-3"  method="post">       
+		   Severidade do Alerta:</br>
+       
+          <div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="1" checked>
+		  <label class="form-check-label" for="exampleRadios1">
+			Grave
+		  </label>
+		</div>
+		 <div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="2">
+		  <label class="form-check-label" for="exampleRadios2">
+			Média
+		  </label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="3">
+		  <label class="form-check-label" for="exampleRadios3">
+			Baixa
+		  </label>
+		</div>
+		<div class="form-check form-check-inline">
+		<select class="form-select form-select-sm">
+		  <option selected>Escolha o Tipo de Alerta</option>
+		  <option value="1">Acidente</option>
+<option value="2">Arrastão</option>
+<option value="3">Assalto</option>
+<option value="4">Chuva Forte</option>
+<option value="5">Deslizamento</option>
+<option value="6">Enchente</option>
+<option value="7">Erupção Vulcânica</option>
+<option value="8">Granizo</option>
+<option value="9">Guerra</option>
+<option value="10">Inundação</option>
+<option value="11">Invasão Alienígena</option>
+<option value="12">Meteoro</option>
+<option value="13">Nevasca</option>
+<option value="14">Poluição</option>
+<option value="15">Pista Interditada</option>
+<option value="16">Queimada</option>
+<option value="17">Queda de Árvore</option>
+<option value="18">Radiação</option>
+<option value="19">Tempestade</option>
+<option value="20">Terremoto</option>
+<option value="21">Tsunami</option>
+		</select>
+		</div>
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-map"></span>
+                <input type="text" name="localidade" id="localidade" placeholder="Localidade">
+            </div>
+            <div class="form-field d-flex align-items-center">                
+                <input type="text" name="descricao" id="descricao" placeholder="Descrição"></textarea>
+            </div>                       
+            <div class="d-flex align-items-center">
+                <span class="far fa-image"></span>
+                <input type="file" name="foto" id="foto" accept="image/*">
+            </div>
+            <a href="Alertas.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cadastrar</a>
+        </form>        
+        <div class="text-center fs-10 p-3">
+            <font size="1">
+                ®UNI-FACEF Hackathon Grupo 6
+            </font>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        var myLink = document.querySelectorAll('a[href="#"]');
+        myLink.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>
